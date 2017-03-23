@@ -88,7 +88,7 @@ $('#confirmButton').click(
 
 
 function getPokemon(input) {
-  var url = "http://pokeapi.co/api/v2/pokemon/" + input + "/"
+  var url = "https://pokeapi.co/api/v2/pokemon/" + input + "/"
   $.get(url).then (function(data) {
   console.log(data)
   var name = jsUcfirst(data.name)
